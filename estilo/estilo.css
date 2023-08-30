@@ -207,10 +207,7 @@ padding: 10px;
 
 /* TERMINA SECCION DE GRID CON EL FORMULARIO SOCIO Y ATAJO A PELUQUERIA*/
 
-/************ARRANCA EL CSS DE FOOTER***************/
 
-
-/*****************TERMINA EL FOOTER***************/
 
 
 .preciosPelu {
@@ -365,3 +362,10 @@ padding: 10px;
 }
 
 /******************* TERMINA CATALOGO ***************/
+
+/************ARRANCA EL CSS DE FOOTER***************/
+footer {
+    background-color: rgb(211, 190, 230) !important;
+}
+
+/*****************TERMINA EL FOOTER***************/
