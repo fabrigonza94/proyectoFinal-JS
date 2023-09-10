@@ -39,6 +39,15 @@ header {
     margin-bottom: 50px;
     padding-top: -100px;
 }
+@media (max-width: 500px) {
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+}
 
 /******************FINALIZA SECCION HEADER****************/
 
@@ -46,7 +55,7 @@ header {
 h1 {
     text-align: center;
     font-size: 100px;
-    color: rgb(152, 73, 216);
+    color: rgb(193, 150, 228);
 
     /* margin-top: 200px; */
     height: 350px;
@@ -70,7 +79,21 @@ h1 {
     }
 }
 
-
+.contenedorPortada {
+    position: relative;
+    height: 100%;
+}
+.titulos {
+    position: absolute;
+    text-align: center;
+    color: black;
+   
+}
+.imgPortada {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+} 
 .presentacion {
     display: flex;
     justify-content: flex-start;
@@ -131,6 +154,8 @@ img {
 .destacados {
     width: 300px;
     height: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
 
 }
 
@@ -233,7 +258,25 @@ p.subtitulos {
 
 
 /*********************** SECCION PELUQUERIA ************/
-
+.contenedorPelu {
+    position: relative;
+    
+}
+.tituloPelu {
+    color: #a172ad;
+    margin-top: 50px;
+    position: absolute;
+    text-align: center;
+    
+}
+@media (max-width: 500px) {
+    .tituloPelu {
+        margin-top: -2px;
+    }
+    .imgPelu {
+        margin-left: -10px;
+    }
+}
 .preciosPelu {
     display: flex;
     display: inline-block;
@@ -246,18 +289,20 @@ p.subtitulos {
     align-items: center;
     padding-top: 50px;
     background-color: rgb(207, 185, 228);
+    margin-bottom: 100px;
+    border-radius: 5px;
 }
 
 .formPelu {
     display: flex;
     display: inline-block;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 30px;
     padding: 50px;
     margin-right: auto;
     margin-left: 0px;
     font-size: 20px;
-    margin-bottom: -300px;
+    margin-bottom: 100px;
     background-color: rgb(207, 185, 228);
     width: 100%;
     border-radius: 4px;
@@ -277,6 +322,19 @@ p.subtitulos {
     display: block;
     border-radius: 2px;
     border: 1px black solid;
+}
+
+.agendaOnline {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-top: 20px;
+    height: 200px;
+    color: #d494e2;
+}
+.h1Peluqueria {
+    margin-top: 50px;
+    height: auto;
 }
 
 /********************* TERMINA SECCION PELUQEURIA  *****************/
@@ -353,7 +411,7 @@ p.subtitulos {
 .datosConsulta {
     text-align: center;
     margin-bottom: 100px;
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: 25px;
     background-color: rgb(219, 190, 231);
 }
@@ -375,7 +433,16 @@ p.subtitulos {
     font-size: 25px;
     margin-right: 15rem;
     margin-bottom: 50px;
+}
 
+.h4Socio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #c5bbc7;
 
 }
 
