@@ -7,14 +7,13 @@ body {
 header {
   background-color: rgb(189, 168, 189);
   font-size: 1em;
-  height: auto;
 }
 header .navBar {
-  padding: 1rem;
+  padding: 1em;
   text-transform: uppercase;
 }
 header .navBar:hover {
-  font-size: 2em;
+  font-size: 0.8em;
 }
 header .logo {
   width: 300px;
@@ -37,7 +36,7 @@ header .logo {
 
 h1 {
   color: rgb(182, 144, 182);
-  font-size: 3em;
+  font-size: 5rem;
   height: 350px;
   text-align: center;
 }
@@ -55,6 +54,10 @@ h2, h3, h4 {
 
 footer {
   background-color: rgb(189, 168, 189);
+  text-align: center;
+}
+footer a {
+  justify-content: center;
 }
 
 @media (max-width: 500px) {
@@ -84,6 +87,14 @@ footer {
 .cajaCards {
   width: 100%;
 }
+.cajaCards .comprarBtn {
+  background-color: rgb(233, 203, 233);
+  margin-top: 10px;
+}
+.cajaCards .destacados1 {
+  width: auto;
+  height: 360px;
+}
 .cajaCards .card {
   text-align: center;
   border: 1px solid rgb(233, 203, 233);
@@ -93,9 +104,9 @@ footer {
   margin-left: 5px;
   margin-right: 5px;
 }
-.cajaCards .comprarBtn {
-  background-color: rgb(233, 203, 233);
-  margin-top: 10px;
+.cajaCards .card .comprarBtn {
+  background-color: rgb(247, 240, 240);
+  width: 100%;
 }
 
 .imgPortada {
@@ -111,7 +122,7 @@ footer {
 
 .presentacion {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .presentacion .imgPresentacion {
   width: 330px;
@@ -120,6 +131,15 @@ footer {
   padding-left: 20px;
   box-shadow: 3px 7px 7px violet;
   margin-left: 30px;
+}
+@media (max-width: 500px) {
+  .presentacion .imgPresentacion {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: -30px !important;
+    justify-content: flex-start;
+  }
 }
 
 .urg {
@@ -157,12 +177,16 @@ footer {
 }
 .gridPadre .atajoPelu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: 150px;
   box-shadow: 3px 7px 7px rgb(182, 144, 182);
-  width: 50px;
+  width: auto;
   height: auto;
-  align-items: flex-end;
+  align-items: flex-start;
+}
+.gridPadre .imgPelu {
+  height: 350px;
+  width: 350px;
 }
 .gridPadre .form {
   height: 300px;
@@ -195,10 +219,48 @@ footer {
   width: 100px;
 }
 
+.imgAccesorios {
+  box-shadow: 1px 5px 5px violet;
+}
+
+.imgRopa {
+  box-shadow: 1px 5px 5px violet;
+}
+
+.imgAlimentos {
+  box-shadow: 1px 5px 5px violet;
+}
+
+.subCatalogo {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin: 200px 20px 20px 20px;
+  color: rgb(88, 75, 100);
+  background-color: rgb(189, 168, 189);
+  border-radius: 10px;
+}
+
+.card {
+  height: 500px;
+  width: 350px;
+  text-align: center;
+  background-color: rgb(233, 203, 233);
+}
+.card .comprarBtn {
+  background-color: rgb(247, 240, 240);
+  width: 100%;
+}
+.card .destacados {
+  width: 350px;
+  height: 350px;
+}
+
+/******************* TERMINA CATALOGO ***************/
 .contenedorPelu {
   position: relative;
 }
-.contenedorPelu tituloPelu {
+.contenedorPelu .tituloPelu {
   margin-top: 50px;
   position: absolute;
   text-align: center;
@@ -212,7 +274,7 @@ footer {
   }
 }
 
-.formPrecio preciosPelu {
+.formPrecio .preciosPelu {
   display: flex;
   display: inline-block;
   font-size: 0.8em;
@@ -225,7 +287,7 @@ footer {
   margin-bottom: 100px;
   border-radius: 5px;
 }
-.formPrecio formPelu {
+.formPrecio .formPelu {
   display: flex;
   display: inline-block;
   justify-content: center;
@@ -246,7 +308,7 @@ footer {
   font-weight: bold;
   border-radius: 2px;
 }
-.formPrecio btnSocio {
+.formPrecio .btnSocio {
   margin-top: 5px;
   display: block;
   border-radius: 2px;

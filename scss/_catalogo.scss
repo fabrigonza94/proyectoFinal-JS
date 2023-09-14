@@ -1,0 +1,39 @@
+.imgAccesorios {
+    box-shadow: 1px 5px 5px violet;
+
+}
+
+.imgRopa {
+    box-shadow: 1px 5px 5px violet;
+}
+
+.imgAlimentos {
+    box-shadow: 1px 5px 5px violet;
+}
+
+.subCatalogo {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 200px 20px 20px 20px;
+    color: rgb(88, 75, 100);
+    background-color: $segundoColor;
+    border-radius: 10px;
+}
+.card {
+    height: 500px;
+    width: 350px;
+    text-align: center;
+    background-color: $mainColor;
+    .comprarBtn {
+        background-color: $white;
+        width: 100%;
+    }
+    .destacados {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+/******************* TERMINA CATALOGO ***************/

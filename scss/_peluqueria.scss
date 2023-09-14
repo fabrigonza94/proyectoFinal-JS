@@ -1,6 +1,6 @@
 .contenedorPelu {
     position: relative;
-    tituloPelu {
+    .tituloPelu {
         margin-top: 50px;
     position: absolute;
     text-align: center;
@@ -16,7 +16,7 @@
 }
 
 .formPrecio {
-    preciosPelu {
+    .preciosPelu {
         display: flex;
         display: inline-block;
         font-size: $textSm;
@@ -29,7 +29,7 @@
         margin-bottom: 100px;
         border-radius: 5px;
     }
-    formPelu {
+    .formPelu {
         display: flex;
         display: inline-block;
         justify-content: center;
@@ -50,7 +50,7 @@
         font-weight: bold;
         border-radius: 2px;
     }
-    btnSocio {
+    .btnSocio {
         margin-top: 5px;
         display: block;
         border-radius: 2px;
