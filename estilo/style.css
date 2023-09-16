@@ -42,11 +42,13 @@ h1 {
 }
 @media (max-width: 500px) {
   h1 {
-    font-size: 0.8em;
+    font-size: 2em;
   }
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   color: rgb(12, 12, 12);
   text-align: center;
   margin: 30px 0px 30px 0px;
@@ -58,6 +60,7 @@ footer {
 }
 footer a {
   justify-content: center;
+  color: rgb(12, 12, 12);
 }
 
 @media (max-width: 500px) {
@@ -107,6 +110,11 @@ footer a {
 .cajaCards .card .comprarBtn {
   background-color: rgb(247, 240, 240);
   width: 100%;
+}
+@media (max-width: 500px) {
+  .cajaCards .card {
+    margin-left: 18px !important;
+  }
 }
 
 .imgPortada {
@@ -231,6 +239,10 @@ footer a {
   box-shadow: 1px 5px 5px violet;
 }
 
+.cajaCatalogo {
+  margin-top: -200px;
+}
+
 .subCatalogo {
   font-size: 50px;
   font-weight: bold;
@@ -256,6 +268,14 @@ footer a {
   height: 350px;
 }
 
+@media (max-width: 500px) {
+  .card {
+    margin-top: 20px;
+  }
+  .subCatalogo {
+    width: 95%;
+  }
+}
 /******************* TERMINA CATALOGO ***************/
 .contenedorPelu {
   position: relative;
@@ -352,8 +372,18 @@ footer a {
 
 .beneficios .preciosSocio {
   margin-left: auto;
+  height: 400px;
+  width: 400px;
 }
 
+@media (max-width: 500px) {
+  .preciosSocio {
+    max-width: 100%;
+  }
+}
+.cajaForm .datosPersona {
+  margin-top: 20px;
+}
 .cajaForm .formSocio {
   width: 400px;
   background-color: rgb(189, 168, 189);
@@ -363,6 +393,16 @@ footer a {
   box-shadow: 7px 13px 37px #6f2681;
   border-radius: 5px;
   margin-right: 150px;
+}
+.cajaForm .controles {
+  margin: 5px;
+  width: 100%;
+}
+.cajaForm .botones {
+  margin-top: 30px;
+  width: 100%;
+  margin-top: 5px;
+  border: none;
 }
 @media (max-width: 500px) {
   .cajaForm .formSocio {
@@ -381,24 +421,14 @@ footer a {
 .cajaPadre .mapa {
   width: 50%;
 }
-.cajaPadre .redes {
-  width: 200px;
-  height: 200px;
-}
 @media (max-width: 500px) {
-  .cajaPadre .cajaPadre {
-    display: flex;
-    flex-direction: column;
-  }
-  .cajaPadre .contacto {
+  .cajaPadre .form {
+    margin-left: 200px;
+    width: 90%;
     margin-top: 50px;
-    margin-left: 60px;
-  }
-  .cajaPadre .redes {
-    width: 180px;
-    height: 180px;
   }
   .cajaPadre .mapa iframe {
+    margin-left: -90px;
     height: 300px;
     width: 300px;
   }
@@ -411,108 +441,7 @@ footer a {
   margin: 50px 0px 50px 0px;
 }
 
-.productosDestacados {
-  background-color: rgb(182, 144, 182);
-  margin-bottom: 100px;
-  text-transform: uppercase;
-  font-weight: bold;
-  height: 80px;
-  font-size: 2em;
-  text-align: center;
-  padding-top: 5px;
-  height: 100%;
-  width: 100%;
-}
-
-.cajaCards {
-  width: 100%;
-}
-.cajaCards .card {
-  text-align: center;
-  border: 1px solid rgb(233, 203, 233);
-  margin-bottom: 100px;
-  width: auto;
-  height: auto;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.cajaCards .comprarBtn {
-  background-color: rgb(233, 203, 233);
-  margin-top: 10px;
-}
-
-.contenedorPortada .imgPortada {
-  width: 10%;
-  height: 10%;
-}
-.contenedorPortada .titulos {
-  position: absolute;
-  text-align: center;
-  color: rgb(12, 12, 12);
-}
-
-.presentacion {
-  display: flex;
-  justify-content: flex-start;
-}
-.presentacion .imgPresentacion {
-  width: 330px;
-  height: 330px;
-  border-radius: 50px;
-  padding-left: 20px;
-  box-shadow: 3px 7px 7px violet;
-  margin-left: 30px;
-}
-.presentacion .img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50px;
-  margin-left: 10px;
-  padding-left: 20px;
-}
-
-.urg {
-  text-align: center;
-  color: rgb(12, 12, 12);
-  background-color: rgb(233, 203, 233);
-  margin: 200px 20px 200px 20px;
-  padding: 20px;
-  font-size: 1em;
-}
-
-.atajosParrafo {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-.atajosParrafo p.subtitulos {
-  font-size: 2em;
-  background-color: rgb(189, 168, 189);
-  width: 500px;
-  padding-left: 20px;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
-.gridPadre {
-  display: flex;
-  flex-direction: row;
-  height: 500px;
-  justify-content: center;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-bottom: 20rem;
-}
-.gridPadre atajoPelu {
-  display: flex;
-  justify-content: center;
-  margin-left: 150px;
-  box-shadow: 3px 7px 7px rgb(182, 144, 182);
-  width: auto;
-  align-items: flex-start;
-}
-.gridPadre form {
+.form {
   height: 300px;
   width: 400px;
   background-color: rgb(233, 203, 233);
@@ -522,11 +451,11 @@ footer a {
   margin-right: 200px;
   box-shadow: 7px 13px 37px rgb(182, 144, 182);
 }
-.gridPadre form h3 {
+.form h3 {
   font-size: 1em;
   margin-bottom: 20px;
 }
-.gridPadre .controles {
+.form .controles {
   padding: 10px;
   width: 300px;
   background-color: rgb(247, 240, 240);
@@ -535,7 +464,7 @@ footer a {
   font-size: 0.8em;
   border-radius: 5px;
 }
-.gridPadre .botones {
+.form .botones {
   border-radius: 5px;
   border: none;
   margin: 10px;

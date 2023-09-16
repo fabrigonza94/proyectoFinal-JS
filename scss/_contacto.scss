@@ -1,46 +1,56 @@
-
 .cajaPadre {
-    .mapa {
-        width: 50%;
+  .mapa {
+    width: 50%;
+  }
+
+  @media (max-width: 500px) {
+    .form {
+      margin-left: 200px;
+      width: 90%;
+      margin-top: 50px;
     }
-    .redes {
-        width: 200px;
-        height: 200px;
-    
+
+    .mapa iframe {
+      margin-left: -90px;
+      height: 300px;
+      width: 300px;
     }
-    
-    @media (max-width: 500px) {
-        .cajaPadre {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .contacto {
-            margin-top: 50px;
-            margin-left: 60px;
-        }
-    
-        .redes {
-            width: 180px;
-            height: 180px;
-        }
-    
-        .mapa iframe {
-            height: 300px;
-            width: 300px;
-        }
-    
-    }
-    
+  }
 }
 .horario {
-    text-align: center;
-    font-size: $textXl;
-    background-color: $tercerColor;
-    margin: 50px 0px 50px 0px;
+  text-align: center;
+  font-size: $textXl;
+  background-color: $tercerColor;
+  margin: 50px 0px 50px 0px;
 }
 
-
-
-
-
+.form {
+  height: 300px;
+  width: 400px;
+  background-color: $mainColor;
+  height: 400px;
+  padding: 30px;
+  color: white;
+  margin-right: 200px;
+  box-shadow: 7px 13px 37px $tercerColor;
+  h3 {
+    font-size: $textMd;
+    margin-bottom: 20px;
+  }
+  .controles {
+    padding: 10px;
+    width: 300px;
+    background-color: $white;
+    margin-bottom: 15px;
+    border: 1px solid $keyColor;
+    font-size: $textSm;
+    border-radius: 5px;
+  }
+  .botones {
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    padding: 7px;
+    width: 100px;
+  }
+}
