@@ -1,8 +1,7 @@
-@mixin textos ($size, $color, $line, $padding) {
+@mixin textos ($size, $color, $padding) {
     font-family: $mainFont;
     font-size: $size;
     color: $color;
-    line-height: $line;
     padding: $padding;
     margin: 5px;
 
