@@ -37,7 +37,9 @@
     font-size: $textMd;
     margin-bottom: 20px;
   }
+  
   .controles {
+    
     padding: 10px;
     width: 300px;
     background-color: $white;
@@ -47,10 +49,7 @@
     border-radius: 5px;
   }
   .botones {
-    border-radius: 5px;
-    border: none;
-    margin: 10px;
-    padding: 7px;
-    width: 100px;
+    @include botones(100%,$textMd ,$keyColor ,none ,$white , 5px  )
+   
   }
 }

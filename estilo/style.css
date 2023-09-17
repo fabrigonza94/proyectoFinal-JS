@@ -46,9 +46,7 @@ h1 {
   }
 }
 
-h2,
-h3,
-h4 {
+h2, h3, h4 {
   color: rgb(12, 12, 12);
   text-align: center;
   margin: 30px 0px 30px 0px;
@@ -61,170 +59,6 @@ footer {
 footer a {
   justify-content: center;
   color: rgb(12, 12, 12);
-}
-
-@media (max-width: 500px) {
-  .peluLink {
-    display: none;
-  }
-  .peluqueria {
-    display: none;
-  }
-  .form {
-    margin-left: -130px;
-  }
-}
-.productosDestacados {
-  background-color: rgb(182, 144, 182);
-  margin-bottom: 100px;
-  text-transform: uppercase;
-  font-weight: bold;
-  height: 80px;
-  font-size: 2em;
-  text-align: center;
-  padding-top: 5px;
-  height: 100%;
-  width: 100%;
-}
-
-.cajaCards {
-  width: 100%;
-}
-.cajaCards .comprarBtn {
-  background-color: rgb(233, 203, 233);
-  margin-top: 10px;
-}
-.cajaCards .destacados1 {
-  width: auto;
-  height: 360px;
-}
-.cajaCards .card {
-  text-align: center;
-  border: 1px solid rgb(233, 203, 233);
-  margin-bottom: 100px;
-  width: auto;
-  height: auto;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.cajaCards .card .comprarBtn {
-  background-color: rgb(247, 240, 240);
-  width: 100%;
-}
-@media (max-width: 500px) {
-  .cajaCards .card {
-    margin-left: 18px !important;
-  }
-}
-
-.imgPortada {
-  width: 100%;
-  height: 100%;
-}
-
-.titulos {
-  position: absolute;
-  text-align: center;
-  color: rgb(12, 12, 12);
-}
-
-.presentacion {
-  display: flex;
-  justify-content: center;
-}
-.presentacion .imgPresentacion {
-  width: 330px;
-  height: 330px;
-  border-radius: 50px;
-  padding-left: 20px;
-  box-shadow: 3px 7px 7px violet;
-  margin-left: 30px;
-}
-@media (max-width: 500px) {
-  .presentacion .imgPresentacion {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    margin-left: -30px !important;
-    justify-content: flex-start;
-  }
-}
-
-.urg {
-  text-align: center;
-  color: rgb(12, 12, 12);
-  background-color: rgb(233, 203, 233);
-  margin: 200px 20px 200px 20px;
-  padding: 20px;
-  font-size: 1em;
-}
-
-.atajosParrafo {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-.atajosParrafo p.subtitulos {
-  font-size: 2em;
-  background-color: rgb(189, 168, 189);
-  width: 500px;
-  padding-left: 20px;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-
-.gridPadre {
-  display: flex;
-  flex-direction: row;
-  height: 500px;
-  justify-content: center;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin-bottom: 20rem;
-}
-.gridPadre .atajoPelu {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 150px;
-  box-shadow: 3px 7px 7px rgb(182, 144, 182);
-  width: auto;
-  height: auto;
-  align-items: flex-start;
-}
-.gridPadre .imgPelu {
-  height: 350px;
-  width: 350px;
-}
-.gridPadre .form {
-  height: 300px;
-  width: 400px;
-  background-color: rgb(233, 203, 233);
-  height: 400px;
-  padding: 30px;
-  color: white;
-  margin-right: 200px;
-  box-shadow: 7px 13px 37px rgb(182, 144, 182);
-}
-.gridPadre .form h3 {
-  font-size: 1em;
-  margin-bottom: 20px;
-}
-.gridPadre .controles {
-  padding: 10px;
-  width: 300px;
-  background-color: rgb(247, 240, 240);
-  margin-bottom: 15px;
-  border: 1px solid rgb(12, 12, 12);
-  font-size: 0.8em;
-  border-radius: 5px;
-}
-.gridPadre .botones {
-  border-radius: 5px;
-  border: none;
-  margin: 10px;
-  padding: 7px;
-  width: 100px;
 }
 
 .imgAccesorios {
@@ -465,11 +299,179 @@ footer a {
   border-radius: 5px;
 }
 .form .botones {
-  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  font-size: 1em;
+  color: rgb(12, 12, 12);
   border: none;
-  margin: 10px;
-  padding: 7px;
-  width: 100px;
+  background-color: rgb(247, 240, 240);
+  margin: 5px;
+}
+
+@media (max-width: 500px) {
+  .peluLink {
+    display: none;
+  }
+  .peluqueria {
+    display: none;
+  }
+  .form {
+    margin-left: -130px;
+  }
+}
+.productosDestacados {
+  background-color: rgb(182, 144, 182);
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 80px;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.cajaCards {
+  width: 100%;
+}
+.cajaCards .comprarBtn {
+  background-color: rgb(233, 203, 233);
+  margin-top: 10px;
+}
+.cajaCards .destacados1 {
+  width: auto;
+  height: 360px;
+}
+.cajaCards .card {
+  text-align: center;
+  border: 1px solid rgb(233, 203, 233);
+  margin-bottom: 100px;
+  width: auto;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.cajaCards .card .comprarBtn {
+  background-color: rgb(247, 240, 240);
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .cajaCards .card {
+    margin-left: 18px !important;
+  }
+}
+
+.imgPortada {
+  width: 100%;
+  height: 100%;
+}
+
+.titulos {
+  position: absolute;
+  text-align: center;
+  color: rgb(12, 12, 12);
+}
+
+.presentacion {
+  display: flex;
+  justify-content: center;
+}
+.presentacion .imgPresentacion {
+  width: 330px;
+  height: 330px;
+  border-radius: 50px;
+  padding-left: 20px;
+  box-shadow: 3px 7px 7px violet;
+  margin-left: 30px;
+}
+@media (max-width: 500px) {
+  .presentacion .imgPresentacion {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: -30px !important;
+    justify-content: flex-start;
+  }
+}
+
+.urg {
+  text-align: center;
+  color: rgb(12, 12, 12);
+  background-color: rgb(233, 203, 233);
+  margin: 200px 20px 200px 20px;
+  padding: 20px;
+  font-size: 1em;
+}
+
+.atajosParrafo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.atajosParrafo p.subtitulos {
+  font-size: 2em;
+  background-color: rgb(189, 168, 189);
+  width: 500px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.gridPadre {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 20rem;
+}
+.gridPadre .atajoPelu {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  box-shadow: 3px 7px 7px rgb(182, 144, 182);
+  width: auto;
+  height: auto;
+  align-items: flex-start;
+}
+.gridPadre .imgPelu {
+  height: 350px;
+  width: 350px;
+}
+.gridPadre .form {
+  height: 300px;
+  width: 400px;
+  background-color: rgb(233, 203, 233);
+  height: 400px;
+  padding: 30px;
+  color: white;
+  margin-right: 200px;
+  box-shadow: 7px 13px 37px rgb(182, 144, 182);
+}
+.gridPadre .form h3 {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+.gridPadre .controles {
+  padding: 10px;
+  width: 300px;
+  background-color: rgb(247, 240, 240);
+  margin-bottom: 15px;
+  border: 1px solid rgb(12, 12, 12);
+  font-size: 0.8em;
+  border-radius: 5px;
+}
+.gridPadre .botones {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  font-size: 1em;
+  color: rgb(12, 12, 12);
+  border: none;
+  background-color: rgb(247, 240, 240);
+  margin: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
