@@ -25,7 +25,7 @@
     justify-content: end;
     align-items: center;
     padding-top: 50px;
-    background-color: $segundoColor;
+    background-image: linear-gradient(to left,$segundoColor, $white);
     margin-bottom: 100px;
     border-radius: 5px;
   }
@@ -39,7 +39,7 @@
     margin-left: 0px;
     font-size: $textSm;
     margin-bottom: 100px;
-    background-color: $segundoColor;
+    background-image: linear-gradient(to right,$segundoColor, $white);
     width: 100%;
     border-radius: 4px;
     border: 1px solid black;
@@ -55,18 +55,22 @@
     display: block;
     border-radius: 2px;
     border: 1px black solid;
+    
   }
 }
 
 .agendaOnline {
-  font-size: $textMd;
+  font-size: $textXl;
   text-transform: uppercase;
   margin-top: 20px;
   padding-top: 20px;
   height: 200px;
-  color: $segundoColor;
+  color: $tercerColor;
 }
 .pPeluqueria {
   margin-top: 50px;
   height: auto;
+  font-size: $textXxl;
+  text-transform: uppercase;
+  text-decoration:underline;
 }

@@ -6,14 +6,17 @@ body {
 // nesting
 
 header {
-  background-color: $segundoColor;
   font-size: $textMd;
-
+  background-image: linear-gradient(to top,$white, $segundoColor);
   .navBar {
     padding: 1em;
     text-transform: uppercase;
     &:hover {
-      font-size: $textSm;
+      font-size: 20px;
+      transition: 1s;
+      background-color: $tercerColor;
+        border-radius: 20px;
+        height: auto;
     }
   }
 
@@ -25,6 +28,7 @@ header {
     margin-top: -40px;
     margin-bottom: 50px;
     padding-top: -100px;
+
   }
   @media (max-width: 500px) {
     .logo {
@@ -35,6 +39,7 @@ header {
       margin-left: 25px;
     }
   }
+
 }
 
 h1 {
@@ -42,6 +47,8 @@ h1 {
   font-size: $textH1;
   height: 350px;
   text-align: center;
+  animation-name: opacity; 
+  animation-duration: 8s;
   @media (max-width: 500px) {
     font-size: $textXl;
   }
@@ -54,7 +61,7 @@ h2,h3,h4 {
 }
 
 footer {
-  background-color: $segundoColor;
+    background-image: linear-gradient(to top,$segundoColor, $white);
   text-align: center;
   a {
     justify-content: center;
@@ -62,3 +69,11 @@ footer {
   }
 }
 
+@keyframes opacity{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

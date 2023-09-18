@@ -30,6 +30,10 @@
     .comprarBtn {
       background-color: $mainColor;
       margin-top: 10px;
+      &:hover {
+        transform: scaleX(1.1);
+        transition: 1s;
+      }
     }
     .destacados1 {
       width: auto;
@@ -157,7 +161,11 @@
     }
   
     .botones {
-      @include botones(100%,$textMd ,$keyColor ,none ,$white , 5px  )
+      @include botones(100%,$textMd ,$keyColor ,none ,$white , 5px  );
+      &:hover {
+        transform: scaleX(1.1);
+        transition: 1s;
+      }
     }
   }
   

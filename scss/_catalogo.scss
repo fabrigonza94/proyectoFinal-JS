@@ -30,6 +30,10 @@
   .comprarBtn {
     background-color: $white;
     width: 100%;
+    &:hover {
+        transform: scaleX(1.1);
+        transition: 1s;
+      }
   }
   .destacados {
     width: 350px;
