@@ -7,6 +7,9 @@ body {
 header {
   font-size: 1em;
   background-image: linear-gradient(to top, rgb(247, 240, 240), rgb(189, 168, 189));
+  height: 10%;
+  width: 100%;
+  margin-left: 0px !important;
 }
 header .navBar {
   padding: 1em;
@@ -20,13 +23,11 @@ header .navBar:hover {
   height: auto;
 }
 header .logo {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   filter: brightness(1.1);
   mix-blend-mode: multiply;
   margin-top: -40px;
-  margin-bottom: 50px;
-  padding-top: -100px;
 }
 @media (max-width: 500px) {
   header .logo {
@@ -39,6 +40,7 @@ header .logo {
 }
 
 h1 {
+  width: 100%;
   color: rgb(182, 144, 182);
   font-size: 5rem;
   height: 350px;
@@ -56,6 +58,7 @@ h2, h3, h4 {
   color: rgb(12, 12, 12);
   text-align: center;
   margin: 30px 0px 30px 0px;
+  width: 100%;
 }
 
 footer {
@@ -75,6 +78,10 @@ footer a {
     opacity: 1;
   }
 }
+body {
+  border: 2px solid black;
+}
+
 .imgAccesorios {
   box-shadow: 1px 5px 5px violet;
 }
@@ -95,7 +102,9 @@ footer a {
   font-size: 50px;
   font-weight: bold;
   text-align: center;
-  margin: 200px 20px 20px 20px;
+  margin-top: 200px;
+  margin-left: 25px;
+  width: 100%;
   color: rgb(88, 75, 100);
   background-color: rgb(189, 168, 189);
   border-radius: 10px;
@@ -131,6 +140,7 @@ footer a {
 /******************* TERMINA CATALOGO ***************/
 .contenedorPelu {
   position: relative;
+  width: 100%;
 }
 .contenedorPelu .tituloPelu {
   margin-top: 50px;
@@ -335,6 +345,10 @@ footer a {
 .form .botones:hover {
   transform: scaleX(1.1);
   transition: 1s;
+}
+
+body {
+  border: 2px solid black;
 }
 
 @media (max-width: 500px) {
