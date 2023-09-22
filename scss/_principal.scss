@@ -8,7 +8,7 @@
     }
   
     .form {
-      margin-left: -130px;
+      margin-left: -135px;
     }
   }
   
@@ -23,10 +23,10 @@
     padding-top: 5px;
     height: 100%;
     width: 100%;
-    
   }
   .cajaCards {
     width: 100%;
+    margin-left: -7px;
   
     .comprarBtn {
       background-color: $mainColor;
@@ -37,8 +37,12 @@
       }
     }
     .destacados1 {
-      width: auto;
+      width: 100%;
       height: 360px;
+      
+    }
+    .destacados {
+      width: 100%;
     }
     .card {
       text-align: center;
@@ -63,6 +67,10 @@
   .imgPortada {
     width: 100%;
     height: 100%;
+    filter: brightness(1.2);
+    mix-blend-mode: multiply;
+    animation-name: opacity; 
+  animation-duration: 8s;
   }
   .titulos {
     position: absolute;
@@ -73,6 +81,7 @@
   .presentacion {
     display: flex;
     justify-content: center;
+    margin-right: 60px;
     .imgPresentacion {
       width: 330px;
       height: 330px;
@@ -86,7 +95,7 @@
         width: 100%;
         height: auto;
         margin-top: 20px;
-        margin-left: -58px !important;
+        margin-left: -1px;
         justify-content: flex-start;
       }
     }

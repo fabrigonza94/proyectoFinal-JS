@@ -16,6 +16,13 @@
     }
   }
 }
+.imgPelu {
+  filter: brightness(1.2);
+  mix-blend-mode: multiply;
+  animation-name: opacity; 
+  animation-duration: 8s;
+  margin-top: 80px;
+}
 
 .formPrecio {
   .preciosPelu {
