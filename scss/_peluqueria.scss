@@ -28,18 +28,31 @@
 }
 
 .formPrecio {
-  .preciosPelu {
+  display: flex;
+  display: inline-block;
+  text-align: center;
+  .preciosPelu{
     display: flex;
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     font-size: $textSm;
     border: 1px solid black;
-    width: 100%;
-    justify-content: end;
-    align-items: center;
+    width: 75%;
     padding-top: 50px;
     background-image: linear-gradient(to left, $segundoColor, $white);
     margin-bottom: 100px;
     border-radius: 5px;
+    margin-left: 12rem;
+  }
+  .listaPrecio {
+    font-size: $textXxl;
+    margin-right: 2em;
+    text-transform: uppercase;
+    color: $keyColor;
+  }
+  ul li {
+    font-size: 2em;
   }
   .formPelu {
     display: flex;
@@ -47,26 +60,43 @@
     justify-content: center;
     margin-top: 30px;
     padding: 50px;
-    margin-right: auto;
-    margin-left: 0px;
     font-size: $textSm;
     margin-bottom: 100px;
     background-image: linear-gradient(to right, $segundoColor, $white);
-    width: 100%;
+    width: 75%;
     border-radius: 4px;
-    border: 1px solid black;
+    border: 1px dotted black;
   }
   label {
+    width: 75%;
     font-size: 15px;
-    display: block;
     font-weight: bold;
     border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
   }
   .btnSocio {
-    margin-top: 5px;
-    display: block;
-    border-radius: 2px;
+    border-radius: 5px;
     border: 1px black solid;
+    width: 50%;
+    justify-items: center;
+    height: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover {
+      transform: scaleX(1.1);
+      transition: 1s;
+    }
+  }
+  .btnForm {
+    width: 75%;
+    justify-content: center;
+    height: 3rem;
+    border-radius: 5px;
+  } 
+  .marginBtn {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -84,4 +114,18 @@
   font-size: $textXxl;
   text-transform: uppercase;
   text-decoration: underline;
+}
+
+@media (max-width:500px) {
+.preciosPelu {
+  font-size: 10px !important;
+  margin-left: 3.1rem !important;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.listaPrecio {
+  margin-bottom: 50px;
+  margin-left: 3rem;
+}
 }

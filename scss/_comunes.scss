@@ -3,11 +3,10 @@ body {
   background-color: $white;
 }
 
-// nesting
 
 header {
   font-size: $textMd;
-  background-image: linear-gradient(to top,$white, $segundoColor);
+  background-image: linear-gradient(to top, $white, $segundoColor);
   height: 10%;
   width: 100%;
   margin-left: 0px !important;
@@ -18,10 +17,9 @@ header {
       font-size: 20px;
       transition: 1s;
       background-color: $tercerColor;
-        border-radius: 20px;
-        height: auto;
+      border-radius: 20px;
+      height: auto;
     }
-    
   }
 
   .logo {
@@ -30,8 +28,6 @@ header {
     filter: brightness(1.1);
     mix-blend-mode: multiply;
     margin-top: -40px;
-    
-
   }
   @media (max-width: 500px) {
     .logo {
@@ -42,7 +38,6 @@ header {
       margin-left: 25px;
     }
   }
-
 }
 
 h1 {
@@ -51,14 +46,16 @@ h1 {
   font-size: $textH1;
   height: 350px;
   text-align: center;
-  animation-name: opacity; 
+  animation-name: opacity;
   animation-duration: 8s;
   @media (max-width: 500px) {
     font-size: $textXl;
   }
 }
 
-h2,h3,h4 {
+h2,
+h3,
+h4 {
   color: $keyColor;
   text-align: center;
   margin: 30px 0px 30px 0px;
@@ -66,7 +63,7 @@ h2,h3,h4 {
 }
 
 footer {
-    background-image: linear-gradient(to top,$segundoColor, $white);
+  background-image: linear-gradient(to top, $segundoColor, $white);
   text-align: center;
   a {
     justify-content: center;
@@ -74,12 +71,11 @@ footer {
   }
 }
 
-@keyframes opacity{
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-

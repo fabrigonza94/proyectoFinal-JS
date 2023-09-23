@@ -4,14 +4,14 @@
   }
 
   @media (max-width: 500px) {
-    .form {
+    .formContacto {
       margin-left: 220px;
       width: 90%;
       margin-top: 50px;
     }
 
     .mapa iframe {
-      margin-left: -90px;
+      margin-left: -80px;
       height: 300px;
       width: 300px;
     }
@@ -24,7 +24,7 @@
   margin: 50px 0px 50px 0px;
 }
 
-.form {
+.formContacto {
   height: 300px;
   width: 400px;
   background-color: $mainColor;

@@ -54,7 +54,9 @@ h1 {
   }
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   color: rgb(12, 12, 12);
   text-align: center;
   margin: 30px 0px 30px 0px;
@@ -170,18 +172,33 @@ footer a {
   }
 }
 
+.formPrecio {
+  display: flex;
+  display: inline-block;
+  text-align: center;
+}
 .formPrecio .preciosPelu {
   display: flex;
   display: inline-block;
+  justify-content: center;
+  align-items: center;
   font-size: 0.8em;
   border: 1px solid black;
-  width: 100%;
-  justify-content: end;
-  align-items: center;
+  width: 75%;
   padding-top: 50px;
   background-image: linear-gradient(to left, rgb(189, 168, 189), rgb(247, 240, 240));
   margin-bottom: 100px;
   border-radius: 5px;
+  margin-left: 12rem;
+}
+.formPrecio .listaPrecio {
+  font-size: 3em;
+  margin-right: 2em;
+  text-transform: uppercase;
+  color: rgb(12, 12, 12);
+}
+.formPrecio ul li {
+  font-size: 2em;
 }
 .formPrecio .formPelu {
   display: flex;
@@ -189,26 +206,43 @@ footer a {
   justify-content: center;
   margin-top: 30px;
   padding: 50px;
-  margin-right: auto;
-  margin-left: 0px;
   font-size: 0.8em;
   margin-bottom: 100px;
   background-image: linear-gradient(to right, rgb(189, 168, 189), rgb(247, 240, 240));
-  width: 100%;
+  width: 75%;
   border-radius: 4px;
-  border: 1px solid black;
+  border: 1px dotted black;
 }
 .formPrecio label {
+  width: 75%;
   font-size: 15px;
-  display: block;
   font-weight: bold;
   border-radius: 2px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .formPrecio .btnSocio {
-  margin-top: 5px;
-  display: block;
-  border-radius: 2px;
+  border-radius: 5px;
   border: 1px black solid;
+  width: 50%;
+  justify-items: center;
+  height: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.formPrecio .btnSocio:hover {
+  transform: scaleX(1.1);
+  transition: 1s;
+}
+.formPrecio .btnForm {
+  width: 75%;
+  justify-content: center;
+  height: 3rem;
+  border-radius: 5px;
+}
+.formPrecio .marginBtn {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .agendaOnline {
@@ -228,6 +262,19 @@ footer a {
   text-decoration: underline;
 }
 
+@media (max-width: 500px) {
+  .preciosPelu {
+    font-size: 10px !important;
+    margin-left: 3.1rem !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .listaPrecio {
+    margin-bottom: 50px;
+    margin-left: 3rem;
+  }
+}
 .Socio {
   font-size: 2em;
   margin-top: -60px;
@@ -310,13 +357,13 @@ footer a {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .cajaPadre .form {
+  .cajaPadre .formContacto {
     margin-left: 220px;
     width: 90%;
     margin-top: 50px;
   }
   .cajaPadre .mapa iframe {
-    margin-left: -90px;
+    margin-left: -80px;
     height: 300px;
     width: 300px;
   }
@@ -329,7 +376,7 @@ footer a {
   margin: 50px 0px 50px 0px;
 }
 
-.form {
+.formContacto {
   height: 300px;
   width: 400px;
   background-color: rgb(233, 203, 233);
@@ -339,11 +386,11 @@ footer a {
   margin-right: 200px;
   box-shadow: 7px 13px 37px rgb(182, 144, 182);
 }
-.form h3 {
+.formContacto h3 {
   font-size: 1em;
   margin-bottom: 20px;
 }
-.form .controles {
+.formContacto .controles {
   padding: 10px;
   width: 300px;
   background-color: rgb(247, 240, 240);
@@ -352,7 +399,7 @@ footer a {
   font-size: 0.8em;
   border-radius: 5px;
 }
-.form .botones {
+.formContacto .botones {
   font-family: "Roboto", sans-serif;
   width: 100%;
   font-size: 1em;
@@ -361,7 +408,7 @@ footer a {
   background-color: rgb(247, 240, 240);
   margin: 5px;
 }
-.form .botones:hover {
+.formContacto .botones:hover {
   transform: scaleX(1.1);
   transition: 1s;
 }
@@ -374,7 +421,7 @@ footer a {
     display: none;
   }
   .form {
-    margin-left: 1rem !important;
+    margin-left: -8.5rem !important;
   }
 }
 .productosDestacados {
@@ -392,7 +439,7 @@ footer a {
 
 .cajaCards {
   width: 100%;
-  margin-left: -7px;
+  margin-left: -2rem;
 }
 .cajaCards .comprarBtn {
   background-color: rgb(233, 203, 233);

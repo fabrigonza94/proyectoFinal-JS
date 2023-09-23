@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar navbar-expand-lg ">
+    <header class="sticky-top">
+        <div class="navbar navbar-expand-lg  ">
             <div class="container-fluid">
                 <a class="navbar-brand " href="../index.html">
                     <img class="logo" src="../imagenes/logo.jpg" alt="Logo">
@@ -68,22 +68,22 @@
             <section class="mb-5 ">
                 <form class="formPelu">
                     <label class="label" for="nombre"> Nombre</label>
-                    <input type="text" id="nombre">
+                    <input class="btnForm" type="text" id="nombre">
 
                     <label class="label" for="apellido"> Apellido </label>
-                    <input type="text" id="apellido">
+                    <input class="btnForm" type="text" id="apellido">
 
                     <label class="label" for="telefono"> Telefono </label>
-                    <input type="number" id="telefono">
+                    <input class="btnForm" type="number" id="telefono">
 
-                    <input class="btnSocio" type="submit">
+                    <input class="btnSocio marginBtn" type="submit">
                     <input class="btnSocio" type="reset">
 
                 </form>
             </section>
 
-            <section class="preciosPelu mt-5 d-flex d-inline-flex p-5">
-                <h3>Lista de precios</h3>
+            <section class="preciosPelu mt-5 d-flex p-5 justify-content-center">
+                <p class="listaPrecio">Lista de precios</p>
                 <ul>
                     <li>Corte comun: $100</li>
                     <li>Corte especial: $150</li>
