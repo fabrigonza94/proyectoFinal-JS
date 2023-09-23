@@ -1,181 +1,183 @@
 @media (max-width: 500px) {
-    .peluLink {
-      display: none;
-    }
-  
-    .peluqueria {
-      display: none;
-    }
-  
-    .form {
-      margin-left: -135px;
-    }
+  .peluLink {
+    display: none;
   }
-  
-  .productosDestacados {
-    background-color: $tercerColor;
-    margin-bottom: 100px;
-    text-transform: uppercase;
-    font-weight: bold;
-    height: 80px;
-    font-size: $textXl;
-    text-align: center;
-    padding-top: 5px;
-    height: 100%;
-    width: 100%;
+
+  .peluqueria {
+    display: none;
   }
-  .cajaCards {
-    width: 100%;
-    margin-left: -7px;
-  
-    .comprarBtn {
-      background-color: $mainColor;
-      margin-top: 10px;
-      &:hover {
-        transform: scaleX(1.1);
-        transition: 1s;
-      }
-    }
-    .destacados1 {
-      width: 100%;
-      height: 360px;
-      
-    }
-    .destacados {
-      width: 100%;
-    }
-    .card {
-      text-align: center;
-      border: 1px solid $mainColor;
-      margin-bottom: 100px;
-      width: auto;
-      height: auto;
-      margin-left: 5px;
-      margin-right: 5px;
-      .comprarBtn {
-        background-color: $white;
-        width: 100%;
-      }
-    }
-    @media (max-width: 500px) {
-      .card {
-        margin-left: 18px !important ;
-      }
-    }
+
+  .form {
+    margin-left: 1rem !important;
   }
-  
-  .imgPortada {
-    width: 100%;
-    height: 100%;
-    filter: brightness(1.2);
-    mix-blend-mode: multiply;
-    animation-name: opacity; 
-  animation-duration: 8s;
-  }
-  .titulos {
-    position: absolute;
-    text-align: center;
-    color: $keyColor;
-  }
-  
-  .presentacion {
-    display: flex;
-    justify-content: center;
-    margin-right: 60px;
-    .imgPresentacion {
-      width: 330px;
-      height: 330px;
-      border-radius: 50px;
-      padding-left: 20px;
-      box-shadow: 3px 7px 7px violet;
-      margin-left: 30px;
-    }
-    @media (max-width: 500px) {
-      .imgPresentacion {
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-        margin-left: -1px;
-        justify-content: flex-start;
-      }
-    }
-  }
-  .urg {
-    text-align: center;
-    color: $keyColor;
+}
+
+.productosDestacados {
+  background-color: $tercerColor;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 80px;
+  font-size: $textXl;
+  text-align: center;
+  padding-top: 5px;
+  height: 100%;
+  width: 100%;
+}
+.cajaCards {
+  width: 100%;
+  margin-left: -7px;
+
+  .comprarBtn {
     background-color: $mainColor;
-    margin: 200px 20px 200px 20px;
-    padding: 20px;
-    font-size: $textMd;
+    margin-top: 10px;
+    &:hover {
+      transform: scaleX(1.1);
+      transition: 1s;
+    }
   }
-  
-  .atajosParrafo {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  .destacados1 {
     width: 100%;
-    p.subtitulos {
-      font-size: $textXl;
-      background-color: $segundoColor;
-      width: 500px;
-      padding-left: 20px;
-      text-transform: uppercase;
-      border-radius: 5px;
-    }
+    height: 360px;
   }
-  
-  .gridPadre {
-    display: flex;
-    flex-direction: row;
-    height: 500px;
-    justify-content: center;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-bottom: 20rem;
-    .atajoPelu {
-      display: flex;
-      justify-content: space-between;
-      margin-left: 150px;
-      box-shadow: 3px 7px 7px $tercerColor;
-      width: auto;
-      height: auto;
-      align-items: flex-start;
-    }
-    .imgPelu {
-      height: 350px;
-      width: 350px;
-    }
-  
-    .form {
-      height: 300px;
-      width: 400px;
-      background-color: $mainColor;
-      height: 400px;
-      padding: 30px;
-      color: white;
-      margin-right: 200px;
-      box-shadow: 7px 13px 37px $tercerColor;
-      h3 {
-        font-size: $textMd;
-        margin-bottom: 20px;
-      }
-    }
-    .controles {
-      padding: 10px;
-      width: 300px;
+  .destacados {
+    width: 100%;
+  }
+  .card {
+    text-align: center;
+    border: 1px solid $mainColor;
+    margin-bottom: 100px;
+    width: auto;
+    height: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    .comprarBtn {
       background-color: $white;
-      margin-bottom: 15px;
-      border: 1px solid $keyColor;
-      font-size: $textSm;
-      border-radius: 5px;
-    }
-  
-    .botones {
-      @include botones(100%,$textMd ,$keyColor ,none ,$white , 5px  );
-      &:hover {
-        transform: scaleX(1.1);
-        transition: 1s;
-      }
+      width: 100%;
     }
   }
-  
+  @media (max-width: 500px) {
+    .card {
+      margin-left: 5rem !important ;
+    }
+  }
+}
+
+.imgPortada {
+  width: 100%;
+  height: 100%;
+  filter: brightness(1.2);
+  mix-blend-mode: multiply;
+  animation-name: opacity;
+  animation-duration: 8s;
+  @media (max-width: 500px) {
+    mix-blend-mode: multiply;
+    animation-name: opacity;
+  }
+}
+.titulos {
+  position: absolute;
+  text-align: center;
+  color: $keyColor;
+}
+
+.presentacion {
+  display: flex;
+  justify-content: center;
+  margin-right: 60px;
+  .imgPresentacion {
+    width: 330px;
+    height: 330px;
+    border-radius: 50px;
+    padding-left: 20px;
+    box-shadow: 3px 7px 7px violet;
+    margin-left: 30px;
+  }
+  @media (max-width: 500px) {
+    .imgPresentacion {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      margin-left: -1px;
+      justify-content: flex-start;
+    }
+  }
+}
+.urg {
+  text-align: center;
+  color: $keyColor;
+  background-color: $mainColor;
+  margin: 200px 20px 200px 20px;
+  padding: 20px;
+  font-size: $textMd;
+}
+
+.atajosParrafo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  p.subtitulos {
+    font-size: $textXl;
+    background-color: $segundoColor;
+    width: 500px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+}
+
+.gridPadre {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 20rem;
+  .atajoPelu {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    box-shadow: 3px 7px 7px $tercerColor;
+    width: auto;
+    height: auto;
+    align-items: flex-start;
+  }
+  .imgPelu {
+    height: 350px;
+    width: 350px;
+  }
+
+  .form {
+    height: 300px;
+    width: 400px;
+    background-color: $mainColor;
+    height: 400px;
+    padding: 30px;
+    color: white;
+    margin-right: 200px;
+    box-shadow: 7px 13px 37px $tercerColor;
+    h3 {
+      font-size: $textMd;
+      margin-bottom: 20px;
+    }
+  }
+  .controles {
+    padding: 10px;
+    width: 300px;
+    background-color: $white;
+    margin-bottom: 15px;
+    border: 1px solid $keyColor;
+    font-size: $textSm;
+    border-radius: 5px;
+  }
+
+  .botones {
+    @include botones(100%, $textMd, $keyColor, none, $white, 5px);
+    &:hover {
+      transform: scaleX(1.1);
+      transition: 1s;
+    }
+  }
+}

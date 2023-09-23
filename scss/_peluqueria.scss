@@ -1,4 +1,3 @@
-
 .contenedorPelu {
   position: relative;
   width: 100%;
@@ -19,9 +18,13 @@
 .imgPelu {
   filter: brightness(1.2);
   mix-blend-mode: multiply;
-  animation-name: opacity; 
+  animation-name: opacity;
   animation-duration: 8s;
   margin-top: 80px;
+  @media (max-width: 500px) {
+    mix-blend-mode: multiply;
+    animation-name: opacity;
+  }
 }
 
 .formPrecio {
@@ -34,7 +37,7 @@
     justify-content: end;
     align-items: center;
     padding-top: 50px;
-    background-image: linear-gradient(to left,$segundoColor, $white);
+    background-image: linear-gradient(to left, $segundoColor, $white);
     margin-bottom: 100px;
     border-radius: 5px;
   }
@@ -48,7 +51,7 @@
     margin-left: 0px;
     font-size: $textSm;
     margin-bottom: 100px;
-    background-image: linear-gradient(to right,$segundoColor, $white);
+    background-image: linear-gradient(to right, $segundoColor, $white);
     width: 100%;
     border-radius: 4px;
     border: 1px solid black;
@@ -64,7 +67,6 @@
     display: block;
     border-radius: 2px;
     border: 1px black solid;
-    
   }
 }
 
@@ -81,5 +83,5 @@
   height: auto;
   font-size: $textXxl;
   text-transform: uppercase;
-  text-decoration:underline;
+  text-decoration: underline;
 }

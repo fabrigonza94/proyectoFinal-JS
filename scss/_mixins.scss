@@ -1,20 +1,17 @@
-@mixin textos ($size, $color, $padding) {
-    font-family: $mainFont;
-    font-size: $size;
-    color: $color;
-    padding: $padding;
-    margin: 5px;
-
-
+@mixin textos($size, $color, $padding) {
+  font-family: $mainFont;
+  font-size: $size;
+  color: $color;
+  padding: $padding;
+  margin: 5px;
 }
 
-@mixin botones ($width,$size, $color, $border, $bgcolor, $margin ) {
-    font-family: $mainFont;
-    width: $width;
-    font-size: $size;
-    color: $color;
-    border: $border;
-    background-color: $bgcolor;
-    margin: $margin;
+@mixin botones($width, $size, $color, $border, $bgcolor, $margin) {
+  font-family: $mainFont;
+  width: $width;
+  font-size: $size;
+  color: $color;
+  border: $border;
+  background-color: $bgcolor;
+  margin: $margin;
 }
-

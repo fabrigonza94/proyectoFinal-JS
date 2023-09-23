@@ -163,6 +163,12 @@ footer a {
   animation-duration: 8s;
   margin-top: 80px;
 }
+@media (max-width: 500px) {
+  .imgPelu {
+    mix-blend-mode: multiply;
+    animation-name: opacity;
+  }
+}
 
 .formPrecio .preciosPelu {
   display: flex;
@@ -368,7 +374,7 @@ footer a {
     display: none;
   }
   .form {
-    margin-left: -135px;
+    margin-left: 1rem !important;
   }
 }
 .productosDestacados {
@@ -418,7 +424,7 @@ footer a {
 }
 @media (max-width: 500px) {
   .cajaCards .card {
-    margin-left: 18px !important;
+    margin-left: 5rem !important;
   }
 }
 
@@ -429,6 +435,12 @@ footer a {
   mix-blend-mode: multiply;
   animation-name: opacity;
   animation-duration: 8s;
+}
+@media (max-width: 500px) {
+  .imgPortada {
+    mix-blend-mode: multiply;
+    animation-name: opacity;
+  }
 }
 
 .titulos {

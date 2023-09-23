@@ -37,9 +37,8 @@
     font-size: $textMd;
     margin-bottom: 20px;
   }
-  
+
   .controles {
-    
     padding: 10px;
     width: 300px;
     background-color: $white;
@@ -49,12 +48,10 @@
     border-radius: 5px;
   }
   .botones {
-    @include botones(100%,$textMd ,$keyColor ,none ,$white , 5px  );
+    @include botones(100%, $textMd, $keyColor, none, $white, 5px);
     &:hover {
-        transform: scaleX(1.1);
-        transition: 1s;
-      }
-   
+      transform: scaleX(1.1);
+      transition: 1s;
+    }
   }
 }
-
