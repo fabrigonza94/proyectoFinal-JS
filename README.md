@@ -16,6 +16,15 @@ Despues de practicar y practicar, incorporamos dos herramientas que para mi son 
 
 Así, en terminos generales es como se fue creando y mejorando de a poco mi proyecto, metiendole horas para aprender las nuevas herramientas. Por último, revisar todo el proyecto que los links esten bien, ninguno roto y también aplicar SEO que es fundamental a la hora de subir nuestro proyecto a un servidor. 
 
+## Herramientas: 
+- HTML5
+- CSS
+- Flex-box
+- GRID
+- Boostrap
+- SASS
+- SEO
+
 Link de pages:  https://fabrigonza94.github.io/PreEntrega2-Gonzalez/
 
 Link de repo: https://github.com/fabrigonza94/PreEntrega2-Gonzalez.git
