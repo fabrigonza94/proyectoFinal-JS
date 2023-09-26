@@ -2,6 +2,8 @@
 
 Hola, soy Fabricio Gonzalez de Uruguay y vengo a presentarles mi primer proyecto de desarrollo web!! :D
 
+## Bienvenidos! 
+
 En primer lugar hice una pagina web de una veterinaria es un proyecto ficticio pero podría llegar a ser real ya que la veterinaria existe. Pero eso se vera mas adelante, en esta ocación estoy aprendiendo.
 
 El proyecto lo arranque haciendo un framework, para destok y para cel ya que la web es responsive. Despues de hacer el bosquejo empecé a maquetar la landing. 
@@ -25,6 +27,8 @@ Así, en terminos generales es como se fue creando y mejorando de a poco mi proy
 - Boostrap
 - SASS
 - SEO
+
+Por último, Bienvenidos a mi primer pagina web que pude lograr con muchas horas de trabajo, sin dudas un logro para mi y el puntapie inicial para seguir incursionando en el mundo de la tecnologia, especificamente a lo que voy, front-end. 
 
 ## Los tres links:
 
