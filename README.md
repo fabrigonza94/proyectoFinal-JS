@@ -6,8 +6,8 @@ En primer lugar hice una pagina web de una veterinaria es un proyecto ficticio p
 
 El proyecto lo arranque haciendo un framework, para destok y para cel ya que la web es responsive. Despues de hacer el bosquejo empecé a maquetar la landing. 
 En un principio empecé usando dos herramientas fundamentales:
-##: - HTML5
-    - CSS
+## : - HTML5
+     - CSS
 
 Siguiendo probando y aprendiendo, comencé a añadir los html como contacto, catalogo, hacete socio y peluquería, y despues linkear todos los htmls para que funcionen correctamente. 
 Posterior a esto aprendimos flexbox, una herramienta fundamental, efectiva y practica para trabajar, empezando así a implenatarlo en mi proyecto, modificando bastante el css hasta lograr que quede todo como lo pensé. 
