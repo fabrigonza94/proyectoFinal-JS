@@ -439,7 +439,6 @@ footer a {
 
 .cajaCards {
   width: 100%;
-  margin-left: -2rem;
 }
 .cajaCards .comprarBtn {
   background-color: rgb(233, 203, 233);
@@ -462,8 +461,7 @@ footer a {
   margin-bottom: 100px;
   width: auto;
   height: auto;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 1.5rem;
 }
 .cajaCards .card .comprarBtn {
   background-color: rgb(247, 240, 240);
