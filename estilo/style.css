@@ -467,11 +467,6 @@ footer a {
   background-color: rgb(247, 240, 240);
   width: 100%;
 }
-@media (max-width: 500px) {
-  .cajaCards .card {
-    margin-left: 5rem !important;
-  }
-}
 
 .imgPortada {
   width: 100%;
