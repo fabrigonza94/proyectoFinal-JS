@@ -31,7 +31,7 @@
   display: flex;
   display: inline-block;
   text-align: center;
-  .preciosPelu{
+  .preciosPelu {
     display: flex;
     display: inline-block;
     justify-content: center;
@@ -93,7 +93,7 @@
     justify-content: center;
     height: 3rem;
     border-radius: 5px;
-  } 
+  }
   .marginBtn {
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -116,16 +116,16 @@
   text-decoration: underline;
 }
 
-@media (max-width:500px) {
-.preciosPelu {
-  font-size: 10px !important;
-  margin-left: 3.1rem !important;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.listaPrecio {
-  margin-bottom: 50px;
-  margin-left: 3rem;
-}
+@media (max-width: 500px) {
+  .preciosPelu {
+    font-size: 10px !important;
+    margin-left: 3.1rem !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .listaPrecio {
+    margin-bottom: 50px;
+    margin-left: 3rem;
+  }
 }

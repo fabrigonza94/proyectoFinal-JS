@@ -1,40 +1,39 @@
-@media (min-width: 501px) and (max-width:900px) {
-    .cajaCards {
-        margin-left: 0.2rem !important ;
-    }
-.imgPresentacion {
+@media (min-width: 501px) and (max-width: 900px) {
+  .cajaCards {
+    margin-left: 0.2rem !important ;
+  }
+  .imgPresentacion {
     margin-top: 3rem;
-}
-.gridPadre {
-    margin-left: -7.5rem ;
-}
-.atajoPelu {
+  }
+  .gridPadre {
+    margin-left: -7.5rem;
+  }
+  .atajoPelu {
     margin-right: 2rem;
-    
-}
+  }
 
-//catalogo
+  //catalogo
 
-.card {
+  .card {
     margin-left: 2rem;
     margin-top: 1rem;
-}
+  }
 
-//Peluqueria 
-.preciosPelu {
-    margin-left: 6.5rem !important; 
-}
+  //Peluqueria
+  .preciosPelu {
+    margin-left: 6.5rem !important;
+  }
 
-//Hacete socio
+  //Hacete socio
 
-.datosConsulta {
+  .datosConsulta {
     margin-top: -20rem;
-}
+  }
 
-//Contacto
+  //Contacto
 
-.formContacto {
+  .formContacto {
     margin-left: 15.5rem;
     margin-top: 5rem;
-}
+  }
 }
