@@ -42,6 +42,9 @@
                         <li class="nav-item navBar">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
+                        <li class="nav-item navBar">
+                            <a class="nav-link carrito" href="../html/carrito.html"> <img src="../imagenes/cart-check.svg" alt=""></a>
+                        </li>
                     </ul>
 
                 </nav>
@@ -56,7 +59,7 @@
         </div>
 
 
-        <section class="row cajaCatalogo">
+        <section class="row cajaCatalogo container-product">
             <h2 class="subCatalogo w-100 container-fluid text-center"> Accesorios </h2>
             <div class="row ms-2">
                 <div class="col-xl-3 col-md-6 col-sm-12">
@@ -66,7 +69,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Transportadora</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <a href="#" class="btn comprarBtn">Comprar</a>
+                            <a href="#" class="btn comprarBtn" id="btnAgregarcarrito">Agregar al carrito</a>
 
                         </div>
 
@@ -79,7 +82,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Peine</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <a href="#" class="btn comprarBtn">Comprar</a>
+                            <a href="#" class="btn comprarBtn" id="btnAgregarcarrito">Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +93,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Pelota</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <a href="#" class="btn comprarBtn">Comprar</a>
+                            <a href="#" class="btn comprarBtn" id="btnAgregarcarrito">Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -101,7 +104,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Surtido de juguetes</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <a href="#" class="btn comprarBtn">Comprar</a>
+                            <a href="#" class="btn comprarBtn" id="btnAgregarcarrito">Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -116,7 +119,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Buzos Peluditos</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <a href="#" class="btn comprarBtn">Comprar</a>
+                            <a href="#" class="btn comprarBtn" id="btnAgregarcarrito">Agregar al carrito</a>
 
                         </div>
 
@@ -128,7 +131,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Capitas Polares</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <a href="#" class="btn comprarBtn">Comprar</a>
+                            <a href="#" class="btn comprarBtn" id="btnAgregarcarrito">Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +141,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Buzos de Lana</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <a href="#" class="btn comprarBtn">Comprar</a>
+                            <a href="#" class="btn comprarBtn" id="btnAgregarcarrito">Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -149,7 +152,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Huesos Comestibles</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <a href="#" class="btn comprarBtn">Comprar</a>
+                            <a href="#" class="btn comprarBtn" id="btnAgregarcarrito">Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -165,7 +168,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Pastillas</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <a href="#" class="btn comprarBtn">Comprar</a>
+                            <a href="#" class="btn comprarBtn" id="btnAgregarcarrito">Agregar al carrito</a>
 
                         </div>
 
@@ -178,7 +181,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Pastillas</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <a href="#" class="btn comprarBtn">Comprar</a>
+                            <a href="#" class="btn comprarBtn" id="btnAgregarcarrito">Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -189,7 +192,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Pastillas</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <a href="#" class="btn comprarBtn">Comprar</a>
+                            <a href="#" class="btn comprarBtn" id="btnAgregarcarrito">Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -200,7 +203,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Huesos Comestibles</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <a href="#" class="btn comprarBtn">Comprar</a>
+                            <a href="#" class="btn comprarBtn" id="btnAgregarcarrito">Agregar al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -244,6 +247,8 @@
             <p>&copy; 2023 Veterinaria Petit. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="../js/carrito.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>

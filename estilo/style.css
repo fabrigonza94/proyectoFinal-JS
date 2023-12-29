@@ -3,7 +3,72 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: rgb(247, 240, 240);
 }
+.icon-cart {
+  width: 3em;
+  margin-right: 5px;
+  padding-right: 5px;
+  stroke: black;
+  cursor: pointer;
+}
 
+
+.count-products {
+  position: absolute;
+  top: 55%;
+  right: 0;
+
+  background-color: black;
+  color: white;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+}
+.container-cart-icon {
+  position: relative;
+}
+
+.icon-close {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.icon-close:hover {
+  stroke: red;
+}
+.container-cart-product {
+  position: absolute;
+  top: 130%;
+  right: 0;
+  width: 400px;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgb(150, 143, 143);
+  border-radius: 20px;
+}
+.info-cart-product {
+  display: flex;
+  justify-content: space-between;
+  flex: 0.8;
+}
+.cart-product {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+  border-bottom: 1px solid rgb(155, 142, 142);
+}
+.cart-total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden-cart {
+  display: none;
+}
 header {
   font-size: 1em;
   background-image: linear-gradient(to top, rgb(247, 240, 240), rgb(189, 168, 189));
