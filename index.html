@@ -17,7 +17,7 @@
         content="destacados, beneficios, liquidación, urgencias, mail, buzos, productos, alimentos, juguetes">
 </head>
 
-<body>
+<body onload="getCarrito()">
     <header class="row w-100 sticky-top">
         <div class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -47,34 +47,47 @@
                         </li>
                     </ul>
                     <div class="container-cart-icon carrito">
-                        <div class="row-cart">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="icon-cart">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                            </svg>
-                            <div class="count-products">
-                                <span id="contador-carrito">0</span>
+                        <div class="container-icon">
+                            <div class="row-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                </svg>
+                                <div class="count-products">
+                                    <span id="contador-carrito">0</span>
+                                </div>
                             </div>
-                            <div class="container-cart-product hidden-cart">
-                                <div class="cart-product">
+
+                        </div>
+                        <div class="container-cart-product hidden-cart">
+                            <div class="row-product" id="carito">
+                                <!-- <div class="cart-product">
                                     <div class="info-cart-product">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="icon-close">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                                          </svg>
-                                          
+                                        <div>
+                                            <span class="cantidad-producto-carrito">1</span>
+                                            <p class="titulo-producto-carrito">Peine</p>
+                                            <span class="precio-producto-carrito">100</span>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" data-slot="icon"
+                                            class="icon-close">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6 18 18 6M6 6l12 12" />
+                                        </svg>
+
                                     </div>
 
-                                </div>
-                                <div class="cart-total">
-                                    <h3>Total: </h3>
-                                    <span class="total-pagar">
-                                        $200
-                                    </span>
-                                </div>
+                                </div> -->
 
                             </div>
-                            
+
+                            <div class="cart-total">
+                                <h3>Total: </h3>
+                                <span class="total-pagar" id="pagarTotal">
+                                    $0
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -125,7 +138,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Buzos Peluditos</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <button href="#" class="btn comprarBtn">Agregar al carrito</button>
+                            <button href="#" class="btn comprarBtn"
+                                onclick="agregarCarrito(`buzos peluditos`, `100`)">Agregar al carrito</button>
 
                         </div>
 
@@ -137,7 +151,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Capitas Polares</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <button href="#" class="btn comprarBtn">Agregar al carrito</button>
+                            <button href="#" class="btn comprarBtn"
+                                onclick="agregarCarrito(`capitas polares`, `100`)">Agregar al carrito</button>
 
                         </div>
                     </div>
@@ -148,19 +163,21 @@
                         <div class="card-body">
                             <h5 class="card-title">Buzos de Lana</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <button href="#" class="btn comprarBtn">Agregar al carrito</button>
+                            <button href="#" class="btn comprarBtn"
+                                onclick="agregarCarrito(`buzos de lana`, `100`)">Agregar al carrito</button>
 
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 col-sm-12">
-                    <div class="card">
+                    <div class="card" >
                         <img src="imagenes/pelu.jpg" class="card-img-top destacados1 destacados"
                             alt="Nuestra peluqueria">
                         <div class="card-body">
                             <h5 class="card-title">Huesos Comestibles</h5>
                             <p class="card-text">Liquidacion $100</p>
-                            <button href="#" class="btn comprarBtn">Agregar al carrito</button>
+                            <button href="#" class="btn comprarBtn"
+                                onclick="agregarCarrito(`huesos comestibles`, `100`)">Agregar al carrito</button>
 
                         </div>
                     </div>
@@ -241,6 +258,7 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     
+
 </body>
 
 </html>
