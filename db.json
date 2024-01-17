@@ -1,6 +1,6 @@
-[
+{productos: [
   {id: 1, nombre: 'Buzos peluditos', precio: 100, imagen: 'imagenes/buzosPeludos.jpg', cantidad: 1},
   {id: 2, nombre: 'Capitas Polares', precio: 150, imagen: 'imagenes/capitasPolar.jpg', cantidad: 1},
   {id: 3, nombre: 'Buzos de Lana', precio: 200, imagen: 'imagenes/bucitosdeLana.jpg', cantidad: 1},
   {id: 4, nombre: 'Huesos Comestibles', precio: 50, imagen: 'imagenes/pelu.jpg', cantidad: 1}
-]
+]}
