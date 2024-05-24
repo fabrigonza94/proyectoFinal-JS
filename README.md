@@ -32,5 +32,5 @@ Por último, Bienvenidos a mi primer pagina web que pude lograr con muchas horas
 
 ## Los tres links:
 
-- Link de pages:  https://fabrigonza94.github.io/PreEntrega2-Gonzalez/
-- Link de repo: https://github.com/fabrigonza94/PreEntrega2-Gonzalez.git
+- Link de pages:  https://fabrigonza94.github.io/proyectoFinal-JS/
+- Link de repo: https://github.com/fabrigonza94/proyectoFinal-JS
